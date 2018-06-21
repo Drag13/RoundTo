@@ -1,0 +1,36 @@
+{
+    "name": "@drag13/round-to",
+    "version": "0.0.1",
+    "description": "Small function that rounds number with selected precision",
+    "main": "./src/index.js",
+    "types": "./src/index.d.ts",
+    "scripts": {
+        "test": "mocha --reporter spec tests/*",
+        "cover": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec tests/*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Drag13/RoundTo.git"
+    },
+    "keywords": [
+        "math",
+        "rounding"
+    ],
+    "author": "drag13 <qwark@list.ru>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Drag13/RoundTo/issues"
+    },
+    "homepage": "https://github.com/Drag13/RoundTo#readme",
+    "engines": {
+        "node": ">=4.2.4"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "4.1.2",
+        "chai-spies": "1.0.0",
+        "coveralls": "3.0.1",
+        "istanbul": "0.4.5",
+        "mocha": "5.2.0"
+    }
+}
