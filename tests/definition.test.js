@@ -1,6 +1,6 @@
-const chai = require('chai'),
-    roundTo = require('../src/index'),
-    expect = chai.expect;
+const chai = require('chai');
+const roundTo = require('../src/index');
+const expect = chai.expect;
 
 describe('roundTo function', () => {
     it('should be function', () => {

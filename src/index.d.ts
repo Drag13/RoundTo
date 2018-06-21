@@ -1,6 +1,7 @@
 // Type definitions for RoundTo
 // Project: https://github.com/Drag13/RoundTo
 // Definitions by: Drag13 https://github.com/Drag13
+
 /* =================== USAGE ===================
      import * as round from '@drag13/RoundTo';
  =============================================== */
