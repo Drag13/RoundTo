@@ -11,4 +11,6 @@
 */
 declare function roundTo(number: number, precision: number): number;
 
+declare module roundTo { }
+
 export = roundTo;
