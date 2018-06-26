@@ -27,13 +27,20 @@ const testData = [
     { number: 0.43499999999999994, precision: 4, expected: 0.435 },
 
     { number: 1, precision: 0, expected: 1 },
+
+    { number: 1.1, precision: 1, expected: 1.1 },
+    { number: -1.1, precision: 1, expected: -1.1 },
+    { number: Math.PI, precision: 2, expected: 3.14 },
+    { number: Number.MAX_VALUE, precision: 0, expected: Number.MAX_VALUE },
+    { number: Number.MIN_VALUE, precision: 0, expected: 0 },
+    { number: Number.MIN_VALUE, precision: 4, expected: 0 },
+    { number: Number(7), precision: 0, expected: 7 },
+    { number: new Number(100), precision: 0, expected: 100 },
 ];
 
 describe('roundTo function', () => {
     testData.forEach(input => {
-        it(`should round ${input.number} with precision ${input.precision} to ${
-            input.expected
-        }`, () => {
+        it(`should round ${input.number} with precision ${input.precision} to ${input.expected}`, () => {
             const rounded = roundTo(input.number, input.precision);
             expect(rounded).to.be.equal(input.expected);
         });
