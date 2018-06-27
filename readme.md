@@ -8,7 +8,7 @@
 
 ## Description
 
-Small function to rund decimals with precision
+Small function to round decimals with precision
 
 No external dependencies, uses ES6 inside, TypeScript ready.
 
