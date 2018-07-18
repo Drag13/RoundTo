@@ -24,7 +24,8 @@ function roundTo(num, precision) {
  */
 function round(num, precision) {
     const lvl = Math.pow(10, precision);
-    return Math.round((num + Number.EPSILON) * lvl) / lvl;
+    const epsiolon = Number.EPSILON || 0; // Fix for IE 11 wich doesn't have epsilon
+    return Math.round((num + epsiolon) * lvl) / lvl;
 }
 
 module.exports = roundTo;
