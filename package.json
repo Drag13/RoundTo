@@ -7,7 +7,9 @@
   "scripts": {
     "test": "mocha --reporter spec tests/*",
     "cover": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec tests/*",
-    "lint": "eslint -c .eslintrc.json src tests"
+    "lint": "eslint -c .eslintrc.json src tests",
+    "preversion": "npm run test",
+    "postversion": "git add . && git push && git push --tags"
   },
   "repository": {
     "type": "git",
