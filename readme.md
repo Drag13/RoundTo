@@ -36,7 +36,14 @@ console.assert(roundingResult===5.44);
 
 ## Tests
 
-  `npm test`
+`npm test`
+
+## Some covered cases
+
+```javascript
+console.assert(roundTo(0.43499999999999994, 2)===0.435);
+console.assert(roundTo(Math.PI, 2)===3.14);
+```
 
 ## Contributing
 
