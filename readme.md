@@ -2,15 +2,13 @@
 
 [![codecov](https://codecov.io/gh/Drag13/RoundTo/branch/master/graph/badge.svg)](https://codecov.io/gh/Drag13/RoundTo)
 [![Build Status](https://travis-ci.org/Drag13/RoundTo.svg?branch=master)](https://travis-ci.org/Drag13/RoundTo)
-[![npm](https://img.shields.io/npm/dt/@drag13/round-to.svg)](https://github.com/Drag13/RoundTo)
+[![npm](https://img.shields.io/npm/dt/@drag13/round-to.svg)](https://www.npmjs.com/package/@drag13/round-to)
 [![TypeSCript](https://img.shields.io/badge/TypeScript-Ready-brightgreen.svg)](https://github.com/Drag13/RoundTo)
 [![GitHub license](https://img.shields.io/github/license/Drag13/RoundTo.svg)](https://github.com/Drag13/RoundTo/blob/master/LICENSE)
 
 ## Description
 
-Small function to round decimals with precision
-
-No external dependencies, uses ES6 inside, TypeScript ready.
+Small one-function-lib to round numbers with custom precision. TypeScript ready.
 
 ## Installation
 
@@ -18,7 +16,7 @@ No external dependencies, uses ES6 inside, TypeScript ready.
 
 ## Usage
 
-Usage is simple: roundTo function rounds your decimal with selected precesion. It also tries to handle edge cases with floating point using Epsilon shift and nano-robots (the last is joke, but check tests to see what i am trying to handle)
+RoundTo function rounds your decimal with selected precesion. It also tries to handle edge cases with floating point using Epsilon shift and nano-robots.
 
 ``` javascript
 const round = require('@drag13/round-to');
@@ -38,7 +36,14 @@ console.assert(roundingResult===5.44);
 
 ## Tests
 
-  `npm test`
+`npm test`
+
+## Some covered cases
+
+```javascript
+console.assert(roundTo(0.43499999999999994, 2)===0.435);
+console.assert(roundTo(Math.PI, 2)===3.14);
+```
 
 ## Contributing
 
