@@ -1,4 +1,4 @@
-const isNumber = require('./isNumber');
+const isNumber = require('is-number-strict').default;
 
 /**
  * @module RoundTo
