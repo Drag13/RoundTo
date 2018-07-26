@@ -37,7 +37,9 @@
   "engines": {
     "node": ">=4.2.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "is-number-strict": "0.1.1"
+  },
   "devDependencies": {
     "chai": "4.1.2",
     "chai-spies": "1.0.0",

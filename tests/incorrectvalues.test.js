@@ -33,7 +33,6 @@ const testData = [
     { value: 1, expected: NaN, precision: false },
 ];
 
-
 describe('roundTo function', () => {
     testData.forEach(input => {
         it(`for ${input.value} should return ${input.expected}`, () => {
