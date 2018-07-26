@@ -4,7 +4,7 @@ const isNumber = require('./isNumber');
  * @module RoundTo
  */
 
-'use strict';
+('use strict');
 
 /**
  * Rounds the number with selected precision
@@ -13,7 +13,7 @@ const isNumber = require('./isNumber');
  * @return {number} - rounded number.
  */
 function roundTo(num, precision) {
-    return (isNumber(num) && isNumber(precision)) ? round(num, precision) : NaN;
+    return isNumber(num) && isNumber(precision) ? round(num, precision) : NaN;
 }
 
 /**

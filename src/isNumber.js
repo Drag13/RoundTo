@@ -2,7 +2,7 @@
  * @module IsNumber
  */
 
-'use strict';
+('use strict');
 
 /**
  * Checks if value is real number. Supports Number object.
