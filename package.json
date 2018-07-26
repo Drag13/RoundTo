@@ -1,6 +1,6 @@
 {
   "name": "@drag13/round-to",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "description": "Small function that rounds number with selected precision",
   "main": "./dist/index.min.js",
   "types": "./dts/index.d.ts",
