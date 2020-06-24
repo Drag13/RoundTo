@@ -38,7 +38,7 @@
     "node": ">=4.2.4"
   },
   "dependencies": {
-    "is-number-strict": "0.1.1"
+    "is-number-strict": "1.0.2"
   },
   "devDependencies": {
     "chai": "4.2.0",
