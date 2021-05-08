@@ -1,6 +1,6 @@
 {
   "name": "@drag13/round-to",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "Small function that rounds number with selected precision",
   "main": "./dist/index.min.js",
   "types": "./dts/index.d.ts",
@@ -38,19 +38,20 @@
     "node": ">=4.2.4"
   },
   "dependencies": {
-    "is-number-strict": "1.0.2"
+    "is-number-strict": "^1.0.3"
   },
   "devDependencies": {
-    "chai": "4.2.0",
-    "chai-spies": "1.0.0",
-    "coveralls": "3.0.4",
-    "eslint": "4.19.1",
+    "chai": "^4.3.4",
+    "chai-spies": "^1.0.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
-    "istanbul": "0.4.5",
-    "mocha": "8.0.1",
-    "prettier": "1.18.2",
-    "eslint-plugin-prettier": "2.6.0",
-    "eslint-config-prettier": "2.9.0",
-    "uglify-es": "3.3.9"
+    "eslint-config-prettier": "^2.10.0",
+    "eslint-plugin-prettier": "^2.7.0",
+    "handlebars": "^4.7.7",
+    "istanbul": "^0.4.5",
+    "mocha": "^8.4.0",
+    "prettier": "^1.19.1",
+    "uglify-es": "^3.3.9"
   }
 }
